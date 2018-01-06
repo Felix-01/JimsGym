@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<header id="page-header">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rerum aliquid, provident nam aliquam voluptatibus?</p>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--Contact form-->
+
+<section id="contact" class="p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 offset-md-3">
+                
+                @using (Html.BeginForm("Contact", "Contact", FormMethod.Post, new { @class="form-group"}))
+                {
+                    @Html.ValidationSummary(false, "", new { @class = "error" })
+                    
+                        @Html.Label("Name")
+                        @Html.TextBox("name", null, new { @class="form-control"})
+                    
+                        @Html.Label("Email")
+                        @Html.TextBox("email", null,new { @class = "form-control" })
+                    
+                        @Html.Label("Message")
+                        @Html.TextArea("comments", new { @rows = 4, @cols = 50, @class="form-control" })
+                    
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block mt-3" />
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

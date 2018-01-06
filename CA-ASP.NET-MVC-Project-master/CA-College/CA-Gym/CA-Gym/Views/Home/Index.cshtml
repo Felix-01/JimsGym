@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-image-1 active">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block text-center mb-5">
+                        <h1 class="display-3 pb-5">24 Hour Gym</h1>
+
+                        @Html.ActionLink("Sign Up Now!", "MemberType", "User", null, new { @class = "btn btn-danger btn-lg" })
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-2">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block text-center mb-5">
+                        <h1 class="display-3 pb-5">Free Classes</h1>
+                        @Html.ActionLink("Learn More", "Classes", "Classes", null, new {@class="btn btn-primary btn-g"})
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-3">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block text-center mb-5">
+                        <h1 class="display-3 pb-5">Expert Trainers</h1>
+                        @Html.ActionLink("Learn More", "Trainers", "Trainers", null, new { @class = "btn btn-success btn-lg" })
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-4">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block text-center mb-5">
+                        <h1 class="display-3 pb-5">High Performance Gym Equipment</h1>
+                        @Html.ActionLink("Learn More", "Facilities", "Facilities", null, new { @class = "btn btn-success btn-g" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+</section>
+
+<!--Home icon section-->
+
+<section id="home-icons" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 text-center">
+                <i class="fa fa-heart-o mb-2" aria-hidden="true"></i>
+                <h3>Get Fit, Stay Healthy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam fugiat autem sit ex dolores?</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <i class="fa fa-wheelchair mb-2" aria-hidden="true"></i>
+                <h3>Fully Accessible Gym</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam fugiat autem sit ex dolores?</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <i class="fa fa-money mb-2" aria-hidden="true"></i>
+                <h3>Save Money</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam fugiat autem sit ex dolores?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Home icons section-->
+
+<section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+        <div class="row">
+            <div class="col">
+                <div class="container pt-5">
+                    <h1>Are You Ready?</h1>
+                    <p class="hidden-sm-down">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae temporibus ipsa eaque facilis ullam quaerat hic at vel nisi voluptates quos, doloremque totam culpa autem facere a quisquam in aperiam!</p>
+                    @Html.ActionLink("Sign Up Now!", "MemberType", "User", null, new { @class = "btn btn-danger btn-lg" })
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<!--Prices section-->
+
+<section id="info py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 align-self-center">
+                <h3>Go Further For Less!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ducimus suscipit accusantium animi dolorum laborum alias omnis cumque, ab sunt amet numquam assumenda nisi odit porro possimus non, similique adipisci.</p>
+                @Html.ActionLink("Learn More", "Prices", "Prices", null, new { @class = "btn btn-danger btn-g" })
+            </div>
+            <div class="col-sm-6 align-self-right">
+                <img src="~/Content/Images/runner.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
